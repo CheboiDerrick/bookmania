@@ -13,6 +13,11 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { BooksviewComponent } from './booksview/booksview.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ClassicsComponent } from './classics/classics.component';
+import { FantasyComponent } from './fantasy/fantasy.component';
+import { HistoryComponent } from './history/history.component';
+import { MysteryComponent } from './mystery/mystery.component';
+import { ScienceFictionComponent } from './science-fiction/science-fiction.component';
 
 
 @NgModule({
@@ -23,7 +28,12 @@ import { HomepageComponent } from './homepage/homepage.component';
     SigninComponent,
     SignupComponent,
     BooksviewComponent,
-    HomepageComponent
+    HomepageComponent,
+    ClassicsComponent,
+    FantasyComponent,
+    HistoryComponent,
+    MysteryComponent,
+    ScienceFictionComponent
   ],
   imports: [
     BrowserModule,
