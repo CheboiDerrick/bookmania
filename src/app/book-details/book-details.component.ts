@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { BookService } from '../book-service/book.service';
 
 @Component({
   selector: 'app-book-details',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookDetailsComponent implements OnInit {
 
-  constructor() { }
+  public bookForm: FormGroup;
+  
+  constructor(private formBuilder: FormBuilder, private service: BookService) { }
 
   ngOnInit(): void {
+    this.init();
+  }
+  public saveBook(): void{
+   this.service.addBook(this.bookForm.value).subscribe(result => {});
+
+  }
+
+  private init(): void{
+    this.bookForm = this.formBuilder.group({
+      title:[]
+    });
+
   }
 
 }
