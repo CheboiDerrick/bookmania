@@ -29,7 +29,8 @@ Once the user has created an account,user will have access to view the books dis
 # Cloning
 In your terminal:
 
-git clone https://github.com/CheboiDerrick/bookmania.git
+git clone https://github.com/CheboiDerrick/bookmania.git.
+
 cd bookmania
 
 
