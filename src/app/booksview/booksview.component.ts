@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AllbooksService } from '../allbooks.service';
+import { Book } from '../book';
 
 @Component({
   selector: 'app-booksview',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./booksview.component.css']
 })
 export class BooksviewComponent implements OnInit {
+
 
   constructor() { }
 
